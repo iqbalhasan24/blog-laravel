@@ -22,7 +22,7 @@ class Article extends Model implements SluggableInterface
 	protected $primaryKey = 'id';
 	public $timestamps = true;
 	// protected $guarded = ['id'];
-	protected $fillable = ['slug', 'title','display_on_slider', 'content','slider_text_position', 'image', 'status', 'category_id', 'featured', 'date', 'source'];
+	protected $fillable = ['slug', 'title','display_on_slider', 'content','post_type','slider_text_position', 'image','post_on', 'status', 'category_id', 'featured', 'date', 'source','post_position'];
 	// protected $hidden = [];
     // protected $dates = [];
     protected $sluggable = [
